@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slick css part  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- title of page -->
+   <style>
+      .Our_Amazing_Planet{
+           width: 302px;
+           height: 178px;
+           border-radius:10px;
+         
+
+       }
+       .Our_Amazing_Planet_slider{
+        padding: -15px;
+          width: 95%;
+          margin-left: 30px;
+          
+       }
+       /* *{
+        background-color: #2D2D2D;
+       } */
+       .Our_Amazing_Planet_heading{
+         color: white;
+         margin-left: 30px;
+         padding-top: 5px;
+         font-family:apple-system, BlinkMacSystemFont, -webkit-system-font, "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+         font-size: 17px;
+         line-height: 20.91px;
+       }
+       .Our_Amazing_Planet_para{
+           font-size: 15px;
+           color: rgb(172, 171, 171);
+           line-height: 22.05px;
+           margin-left: 30px;
+           font-family:apple-system, BlinkMacSystemFont, -webkit-system-font, "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+       }
+       .Our_Amazing_Planet_main{
+        width: 1349px;
+         height: 261px;
+         background-color: #2D2D2D;
+       }
+   </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="Our_Amazing_Planet_main">
+      <h2 class="Our_Amazing_Planet_heading">Our Amazing Planet</h2>
+      <p class="Our_Amazing_Planet_para">Explore nature documentary films and series.</p>
+      <div class="Our_Amazing_Planet_slider">
+          <div id="Our_Amazing_Planet_images">
+              <img class="Our_Amazing_Planet"
+                src="https://is2-ssl.mzstatic.com/image/thumb/Features114/v4/98/5f/f4/985ff45d-4afb-a34f-1e88-39011b2ca443/U0YtVFZBLVdXLUZhY3R1YWxfTXVsdGlUaXRsZV9Ccmlja18xLmxzcg.lsr/1478x832fe.webp" 
+                alt=""
+              />
+            </div>
+            <div id="Our_Amazing_Planet_images">
+              <img class="Our_Amazing_Planet"
+                src="https://is2-ssl.mzstatic.com/image/thumb/Features124/v4/84/21/5d/84215d8f-e47b-edaa-e7b0-f94a147ac467/U0YtVFZBLVdXLUZhY3R1YWxfTXVsdGlUaXRsZV9Ccmlja18yLmxzcg.lsr/1478x832fe.webp"
+                alt=""
+              />
+            </div>
+            <div id="Our_Amazing_Planet_images">
+              <img class="Our_Amazing_Planet"
+                src="https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/7e/f1/dd/7ef1ddeb-62fb-cfb7-a531-d1e63f5d0fdf/U0YtVFZBLVdXLUZhY3R1YWxfTXVsdGlUaXRsZV9Ccmlja18zLmxzcg.lsr/1478x832fe.webp"
+                alt=""
+              />
+            </div>
+            <div id="Our_Amazing_Planet_images">
+              <img class="Our_Amazing_Planet"
+              src="https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/90/09/0b/90090b35-00a5-3543-b3e6-84609ece1ed1/U0YtVFZBLVdXLUZhY3R1YWxfTXVsdGlUaXRsZV9Ccmlja180LXAzLmxzcg.lsr/1478x832fe.webp"
+                alt=""
+              />
+            </div>
+            <div id="Our_Amazing_Planet_images">
+              <img class="Our_Amazing_Planet"
+                src="https://is4-ssl.mzstatic.com/image/thumb/Features124/v4/9c/78/15/9c78158d-404f-c2df-d309-beea3df71702/U0YtVFZBLVdXLUZhY3R1YWxfTXVsdGlUaXRsZV9FbnRpdGxlZF9Ccmlja181Lmxzcg.lsr/1478x832fe.webp"
+                alt=""
+              />
+            </div>
+  </div> 
+    </div>
+     
+    
+    
+<!-- slick java scrip part -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/JavaScript">
+    
+$('.Our_Amazing_Planet_slider').slick({
+  slidesToShow: 4,
+  slidesToScroll:4,
+  autoplay:false,
+  autoplaySpeed: 2000,
+});
+</script>
+</body>
+</html>
