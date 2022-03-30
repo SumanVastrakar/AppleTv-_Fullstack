@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2ndFooter</title>
+    <style>
+        #secondFooter {
+            display: grid;
+            justify-content: repeat(3, 1fr);
+            width: 100%;
+            height: 80%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 90px;
+            font-family: Helvetica;
+        }
+        
+        #secondFooter1 {
+            gap: 30px;
+            height: 300px;
+        }
+        
+        #secondFooter2 {
+            width: 100%;
+            height: 14%;
+        }
+        
+        #secondFooter2>h {
+            font-family: Helvetica;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: start;
+            letter-spacing: normal;
+            opacity: 88%;
+            color: black;
+        }
+        
+        #secondFooter2>div {
+            font-family: Helvetica;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: start;
+            letter-spacing: normal;
+            opacity: 56%;
+            color: gray;
+        }
+        
+        #secondFooter3 {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #last {
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: repeat(2, 1fr);
+            height: 70px;
+            width: 100%;
+            margin-top: 30px;
+            background-color: rgb(45, 45, 45);
+            color: aliceblue;
+        }
+        
+        .last2 {
+            text-align: right;
+        }
+        
+        @media only screen and (min-width: 0px) and (max-width: 740px) {
+            #secondFooter,
+            #white {
+                grid-template-columns: repeat(1, 1fr);
+                background-color: 
+#363636;
+            }
+        }
+        
+        #us {
+            margin-right: 50px;
+        }
+        
+        #white {
+            display: grid;
+            grid-template-columns: repeat(2, 450px);
+            height: 200px;
+            grid-gap: 20px;
+        }
+        
+        .first {
+            /* background-color: rgb(233, 233, 240); */
+            border-radius: 20px;
+            color: white;
+            background-color: #363636;
+
+        }
+        
+        @media only screen and (min-width: 0px) and (max-width: 740px) {
+            #white {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>About</h1>
+    </div>
+    <div id="white">
+        <div class="first">
+            <h1>The Morning Show</h1>
+            <p> DRAMA</p>
+            <p>This Emmy winner is an unapologetically candid that looks at the modern workspace through the lens of the peopple who help wakeAmerica up. Pull back the curtain On early morning TV.
+            </p>
+        </div>
+        <div class="first">
+            <h1>The Morning Show</h1>
+            <p>COMMON SENSE</p>
+            <p>Great actors and a strong stroyline in compelling drama.
+            </p>
+
+        </div>
+    </div>
+    <hr id="hr">
+    <div id="secondFooter">
+
+        <div id="secondFooter1">
+
+            <div>
+                <h3>Information</h1>
+            </div>
+
+            <div id="secondFooter2">
+                <h>Genre</h>
+                <div>Thriller</div>
+            </div>
+
+            <div id="secondFooter2">
+                <h>Released</h>
+                <div>2022</div>
+            </div>
+
+
+            <div id="secondFooter2">
+                <h>Rated</h>
+                <div>TV-MA</div>
+            </div>
+
+
+            <div id="secondFooter2">
+                <h>Region of Origin</h>
+                <div>United States</div>
+            </div>
+
+            <div id="secondFooter2">
+                <h>Original Audio</h>
+                <div>English</div>
+            </div>
+        </div>
+
+
+        <div id="secondFooter3">
+            <div id="secondFooter4">
+                <h3>Languages</h1>
+            </div>
+            <div id="secondFooter5">
+                <h>Audio</h>
+                <div>English (AD,AAC,Dolby,Atmos,Dolby 5.1),and 9 more....</div>
+            </div>
+            <br>
+            <div id="secondFooter5">
+                <h>Subtitles</h>
+                <div>English (CC,SDH),and 40 more...</div>
+                <br>
+
+                <h><a href="">See all</a></h>
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Accessbility</h1>
+                    <h4 id="cc">CC</h4>
+                    <p>Closed captions(CC) refer to Subtitles in the available language with the addition of relevant non-dialogue information
+                    </p>
+            </div>
+            <div>
+                <h4 id="cc">CC</h4>
+                <div>
+                    <p>
+                        Audio captions (CC) refer to a narration track describing what is happening on screen , to provide context for those who are blind or have lo vision
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="last">
+
+
+        <div class="last">
+            <p>Copyright 2022 Apple Inc. All reserved</p>
+            <p>Internet Service Terms | Apple TV & Privacy | Cookie Warnning | support</p>
+        </div>
+        <div class="last2">
+            <h id="us"><a href="">United States</a></h>
+        </div>
+
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
