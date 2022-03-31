@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS only -->
+    <!-- //bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+        <link rel="stylesheet" href="machbathMain.css">
+
+    <!-- //fontawesome link -->
+    <script src="https://kit.fontawesome.com/d34e6aef84.js" crossorigin="anonymous"></script>
+
+    <!-- //browsing font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mochiy+Pop+P+One&family=PT+Serif&family=Pacifico&family=Permanent+Marker&family=Readex+Pro:wght@600&family=Rubik+Beastly&family=Syne+Tactile&display=swap"
+        rel="stylesheet">
+
+          <!-- slick css part  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>The Tragedy Of Machbeth</title>
+</head>
+<body>
+    <div id="navbar_landing" class="d-flex">
+        <div class="landing_navbar_logo">
+            <a href="./index.html"> <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6qwhKQ2GhFut6cOduKQTRhngw0G6zVhJLg&usqp=CAU"
+                    alt="AppleLogo"></a>
+
+        </div>
+        <div class="landing_navbar_signin ml-5">
+            <button class="landing_navbar_button d-flex ">
+                <div class="logo_sigin m-1">
+                    <i class="fa-solid fa-user icon_size_user"></i>
+                </div>
+                <div class="logo_text m-1">Rose</div>
+            </button>
+        </div>
+        <div class="landing_navbar_loggedIn dropdown hidden ml-5">
+            <button class="landing_navbar_button dropdown-toggle  d-flex landing_navbar_logout " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="logo_sigin m-1">
+                    <i class="fa-solid fa-user icon_size_user"></i>
+                </div>
+                <div id="logged_user" class="logo_text m-1 pt-1" style="height:10px"></div>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item active" id="dropdown_logout_navbar" href="#">LogOut</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+              </ul>
+        </div>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle landing_navbar_button dropdown-toggle  d-flex landing_navbar_logout" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="logo_sigin m-1">
+                    <i class="fa-solid fa-user icon_size_user"></i>
+                </div>
+                <div id="logged_user" class="logo_text m-1" style="height:10px"></div>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div> -->
+          <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    </div>
+    <!-- //SIGNIN part -->
+    <!-- //============================================================================================================================== -->
+    <div class="signin_box_hidden hidden">
+        <button class="cross_button_1"> <i class="fa-duotone fa-x icon_size_cross"></i></button>
+
+        <div class="signin_container">
+            <i class="fa-brands fa-apple icon_size_apple"></i>
+            <h2>Sign in with your Apple ID</h2>
+            <p class="text-size">You will be signed in to Apple TV and Apple Music</p>
+            <div class="input-group mb-3 appleID_input">
+                <input type="text" class="form-control appleID_input_box" placeholder="Apple ID"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary appleID_input_arrow" type="button" id="button-addon2"><i
+                        class="fa-regular fa-circle-right icon_size_arrow"></i></button>
+            </div>
+            <div class="signin_container_links">
+                <div class="margin_signin_container_links_1">
+                    <a class="Create_new_Apple_Id" href="#">Create New Apple ID ></a>
+                </div>
+
+                <br>
+                <div class="margin_signin_container_links_2">
+                    <a href="#"> Forget Apple ID or Password?</a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!-- //Apple Tv and Privacy -->
+    <!-- ================================================================================================================ -->
+    <div class="signin_termscondition hidden">
+        <button class="cross_button_2"> <i class="fa-duotone fa-x icon_size_cross"></i></button>
+        <div class="sigin_terms_container">
+            <div class="image_apple">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/AppleTVLogo.svg/1200px-AppleTVLogo.svg.png"
+                    alt="Apple image">
+            </div>
+            <h1>Apple TV & Privacy</h1>
+            <i class="fa-solid fa-people-arrows-left-right person_agreement "></i>
+            <p>Your playback, searches, purchases, and device trust score are used to personalize <br> your experience,
+                improve that of others, and prevent fraud.<br> <span style="color:blue">See how your data is
+                    managed...</span></p>
+            <p>With your new Apple ID, you will be able to sign in to available services. Apple records <br>certain
+                usage data for security, support, and reporting purposes.<br><span style="color:blue">See how your data
+                    is managed...</span> </p>
+            <button type="button" class="btn btn-primary Continue_btn">Continue</button>
+        </div>
+
+    </div>
+    <!-- //signin form... -->
+    <div class="sigin_form hidden">
+        <button class="cross_button_3"> <i class="fa-duotone fa-x icon_size_cross"></i></button>
+        <form>
+            <div class="sigin_form_container">
+                <h1 id="create_AppleId">Create Apple ID</h1>
+                <div class="mb-3 ">
+                    <input class="input_width" id="First_Name_input" type="text" placeholder="First Name">
+                </div>
+                <div class="mb-3">
+                    <input class="input_width" id="Last_Name_input" type="text" placeholder="Last Name">
+                </div>
+                <div class="mb-3">
+                    <input class="input_width" id="Birthday_input" type="text" placeholder="Birthday">
+                </div>
+                <div class="mb-3">
+                    <input class="input_width" id="email_input" type="text" placeholder="name@example.com">
+                    <div id="emailHelp" class="form-text">Your email will be your Apple ID.</div>
+                </div>
+                <div class="mb-3">
+                    <input class="input_width" id="password_input" type="password" placeholder="Password">
+
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Agree to Terms & Conditions
+
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary siginButton">Continue</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- //verification of email address -->
+    <div class="email_verification hidden">
+        <button class="cross_button_4"> <i class="fa-duotone fa-x icon_size_cross"></i></button>
+        <div class="email_verification_container">
+            <h1>Verify Email Address</h1>
+            <div class="email_verification_text"></div>
+            <input type="text" id="Email_verification_code" class="input_width" placeholder="Enter Code">
+            <br>
+            <a href="">Request a new code</a>
+            <br>
+            <button type="button" class="btn btn-primary verification_button">Submit</button>
+        </div>
+    </div>
+      <!-- //Bootstrap link -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+        <!-- ---------------------------------------------------------------
+        ---------------------------------------------------------------
+        macbeth_html_page -->
+
+        <div class="tragedtOfMacbeth_video_background">
+
+
+            <div class="tragedtOfMacbeth_video_background1">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/QjxTwOwbqm01shrnls0G1g/1200x450.webp" alt="image">
+            </div>
+            <div class="tragedtOfMacbeth_video_background2"></div>
+    
+    
+    
+        <div class="tragedtOfMacbeth_video_div">
+            <video width="100%" poster="" src="" autoplay loop muted  class="tragedtOfMacbeth_video"></video>
+    
+        </div>
+    
+    
+    
+     <!-- ///////free trial in the main page -->
+     <div class="main_free_Trial">
+        <div class="main_free_Trial_button">
+            <h6>7 days free,then $4.99/month.</h6>
+            <button type="button" class="btn btn-primary main_free_Trial_button_click main_free_Trial_button_click_1 landing_navbar_button">Start Free Trial</button>
+            <br>
+            <button type="button" class="btn btn-secondary main_free_Trial_button_click main_free_Trial_button_click_2 landing_navbar_button">+ Add to Up Next</button>
+        </div>
+        <div class="main_free_Trial_textContent">
+    <div class="main_free_Trial_textContent_text">
+    
+    <h6>Denzal Washington and Frances MacDormand star in joel coen's bold and fierce adaption-a tale of murder,madness,ambition and Wrathful cunning.</h6>
+    </div>
+    <div class="main_free_Trial_textContent_image">
+    <!-- //////append that image here -->
+    <img src="https://i.ibb.co/ygtg53Y/C04-A2-C8-D-3425-4753-A032-D0657424-B3-AF.png" alt="image" class="dolby_image"/>
+    </div>
+        </div>
+        <div class="main_free_Trial_italic">
+            <h6><span style="color:grey">Starring </span>Denzel Washington,Frances MacDormand,Corey hawkins<span style="color:grey" >Director </span>Joel Coen</h6>
+        </div>
+    </div>
+    
+        </div>
+
+        <!-- -----------=======================trailer======================================= -->
+        <div class="Coda_Movie_bonusandTrailer">
+            <h5>Trailer</h5>
+            <img class="Coda_Movie_Related"
+              src="https://acinetvreview.com/wp-content/uploads/2021/12/The-Tragedy-of-Macbeth-2021-movie.jpg" 
+              alt=""
+            />
+          </div>
+          <!-- ==========================bonus====================================================== -->
+          <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+          <div class="Coda_Movie_bonusandTrailer">
+              <h5>Bonus</h5>
+            <img class="Coda_Movie_Related"
+              src="https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fnetflixlife.com%2Ffiles%2Fimage-exchange%2F2021%2F12%2Fie_76872.jpeg" 
+              alt=""
+            />
+          </div>
+          <!-- =============================related part of main page coda================================================================ -->
+          <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+          <div class="Macbeth_movie_realted_main">
+            <h2 class="Macbeth_movie_realted_Related_heading">Related</h2>
+            <div class="Macbeth_movie_realted_Related_slider">
+                <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp" 
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is4-ssl.mzstatic.com/image/thumb/AmQ1cNEzc1DMKH25B5J9aQ/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                    src="https://is3-ssl.mzstatic.com/image/thumb/xwiVfxV1l5Tfy6-1uQ25_Q/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is4-ssl.mzstatic.com/image/thumb/UPoQbHoPte_TFJXEvKIIsw/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is4-ssl.mzstatic.com/image/thumb/I6UAhe-RRHaTB3hCQdQXCQ/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is4-ssl.mzstatic.com/image/thumb/L4WNJNV3nbmyAL6MQSeGuw/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is1-ssl.mzstatic.com/image/thumb/yXhlXOFkS9yJ1kMmOhfIbg/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is5-ssl.mzstatic.com/image/thumb/NHLksWLSZpTcIw36-n7vWA/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is4-ssl.mzstatic.com/image/thumb/K-nsm8mEVNAAnevMTyya7g/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is2-ssl.mzstatic.com/image/thumb/le6mxqLNaXH47MHIH7stzw/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is3-ssl.mzstatic.com/image/thumb/_VWBeTzPLn6LeyUjlTaSiQ/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is1-ssl.mzstatic.com/image/thumb/zRCSBlp0LjwClRXsjyDNYQ/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is2-ssl.mzstatic.com/image/thumb/D1SCGzM1ESBh-SIkHwcvUQ/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is2-ssl.mzstatic.com/image/thumb/s0GHu23qor3EapMRUh-4iw/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is1-ssl.mzstatic.com/image/thumb/a99v9iRDYcIGof0CvxUUoA/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is4-ssl.mzstatic.com/image/thumb/Iz8wdsRXYRysnRRCY0yMrA/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is5-ssl.mzstatic.com/image/thumb/Cof8vC9vaCH-GYX6JltrQA/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is3-ssl.mzstatic.com/image/thumb/eGnsZyr_h0ivXT0r4jbaew/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is1-ssl.mzstatic.com/image/thumb/Epzt9WNlE21aE-FNCoVj2w/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is5-ssl.mzstatic.com/image/thumb/KdlcNbBUOtf7sUXH5z9N8A/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Macbeth_movie_realted_Related_images">
+                    <img class="Macbeth_movie_realted_Related"
+                      src="https://is3-ssl.mzstatic.com/image/thumb/3iAbZQ4pznOpDRenkvOhNA/738x416.webp"
+                      alt=""
+                    />
+                  </div>
+            </div> 
+           </div>
+             
+           <!-- ================================================how to watch================================================================================================================== -->
+           <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+           <div class="main_howToWatch">
+            <h6 style="font-weight: 700;">How To Watch</h6> 
+            <div class="main_howToWatch_div">
+                <div class="main_howToWatch_box">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/DB8YqlVtN7M8YvGvgsP2eg/400x225.png" alt="">
+                </div>
+                <div class="main_howToWatch_freeTrial">
+                    <p style="font-size:17px;">Start Free Trial</p>
+                </div>
+             
+            </div>
+            <p style="font-size: 13px; color:grey ;margin-left: 50px;">7 days free,then $4.99/month.</p>
+        </div>
+      <!-- ==================================cast and crew of coda part===============- -->
+       <!-- ///cast and crew of "machbath" movie -->
+       <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+       <div id="mainCastAndCrew">
+        <div class="main_CandC_heading">
+            <h5>Cast & Crew</h5>
+        </div>
+        <div class="main_CandC_images slider">
+            <!-- //1st image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is4-ssl.mzstatic.com/image/thumb/aL4CRIoWJCAnFGzkX6dyTw/492x492bb.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Denzel Wahington</p>
+                <p class="main_CandC_images_box_text ">Macbeth</p>
+            </div>
+            <!-- //2nd image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is2-ssl.mzstatic.com/image/thumb/IzDsLB0rohl0Id7ZUHh6Jg/492x492bb.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Frances McDormand</p>
+                <p class="main_CandC_images_box_text ">Lady Macbeth</p>
+            </div>
+            <!-- //3rd image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is4-ssl.mzstatic.com/image/thumb/S5kEiRSwLpyMyFwfWw9CDA/492x492bb.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Corey Hawkins</p>
+                <p class="main_CandC_images_box_text ">Macduff</p>
+            </div>
+            <!-- //4th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is4-ssl.mzstatic.com/image/thumb/X1YJP_-saPGFfSp4CaixJA/492x492bb.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Bertie Carvel</p>
+                <p class="main_CandC_images_box_text ">Banquo</p>
+            </div>
+            <!-- //5th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is5-ssl.mzstatic.com/image/thumb/uGEGNeIghlYIfH-iKPp2Mg/492x492bb.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Alex Hassell</p>
+                <p class="main_CandC_images_box_text ">Ross</p>
+            </div>
+            <!-- //6th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is3-ssl.mzstatic.com/image/thumb/mB7gZ8IUvXlsZdqhf7mIHA/492x492bb.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Kathryn Hunter</p>
+                <p class="main_CandC_images_box_text ">Witches/Old Man</p>
+            </div>
+            <!-- //7th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is4-ssl.mzstatic.com/image/thumb/3Dn4FTH3OBodd88AhQAqgg/492x492ve.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Harry Melling</p>
+                <p class="main_CandC_images_box_text ">Malcolm</p>
+            </div>
+            <!-- //8th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is1-ssl.mzstatic.com/image/thumb/-EAXRhreDGsdl48WvzAsbg/492x492bb.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Brendan Gleeson</p>
+                <p class="main_CandC_images_box_text ">Duncan</p>
+            </div>
+            <!-- //9th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is2-ssl.mzstatic.com/image/thumb/8zELDx5NVeX06XnRoYlN3w/492x492bb.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Miles Anderson</p>
+                <p class="main_CandC_images_box_text ">Lennox</p>
+            </div>
+            <!-- //10th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is4-ssl.mzstatic.com/image/thumb/jpGiIaaZlbOFkYemJOCM8g/492x492ve.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Moses ingram</p>
+                <p class="main_CandC_images_box_text ">Lady Macduff</p>
+            </div>
+            <!-- //11th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is3-ssl.mzstatic.com/image/thumb/Lc9IKFwfN81DX1FlU8mH1Q/492x492bb.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Ralph Ineson</p>
+                <p class="main_CandC_images_box_text ">Captain</p>
+            </div>
+            <!-- //12th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is4-ssl.mzstatic.com/image/thumb/WyMCAHCMlHSsfK7nS2U8mg/492x492ve.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Jefferson Mays</p>
+                <p class="main_CandC_images_box_text ">Doctor</p>
+            </div>
+            <!-- //13th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is4-ssl.mzstatic.com/image/thumb/S-w6I82Kq8NT9ggqe2UiFw/492x492ve.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Stehen Root</p>
+                <p class="main_CandC_images_box_text ">Porter</p>
+            </div>
+            <!-- //14th image -->
+            <div class="main_CandC_images_box">
+                <img class="main_CandC_images_box_image"
+                    src="https://is3-ssl.mzstatic.com/image/thumb/xMIDCylYFuif6kqvJ-oNWg/492x492ve.webp" alt="">
+                <p class="main_CandC_images_box_name mt-2 mb-0">Scott Subiono</p>
+                <p class="main_CandC_images_box_text ">Murderer</p>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+  <!-- =====================================footer part============================================================================== -->
+    <div  >
+        <img src="https://i.ibb.co/hsm4WJn/Screenshot-61.png" style="width:100%" alt="">
+        <img src="https://i.ibb.co/44VNG59/Screenshot-62.png" style="width:100%" alt="">
+    </div>
+    
+            
+   <!--================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================= -->
+           <!-- //Bootstrap link -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    
+<!-- slick java scrip part -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- ===================================related part js added============================================================================= -->
+<script type="text/JavaScript">
+    
+    $('.Macbeth_movie_realted_Related_slider').slick({
+      slidesToShow: 5,
+      slidesToScroll:5,
+      autoplay:false,
+      autoplaySpeed: 2000,
+    });
+    </script>
+    <!-- // ============================================cast and crew for all the movies====================================================== -->
+
+     <script type="text/JavaScript">
+
+        $('.slider').slick({
+          slidesToShow: 10,
+          slidesToScroll: 4,
+          autoplay:false,
+          autoplaySpeed: 2000,
+        });
+        </script>
+</body>
+</html>
+<script src="machbathMain.js"></script>
+
+
+
+
