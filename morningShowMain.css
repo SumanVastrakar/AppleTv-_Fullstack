@@ -1,0 +1,554 @@
+/* ==========================================navbar and top video================================================================================= */
+
+#navbar_landing{
+    width:100%;
+    height:6.5vh;
+    background-color: black;
+    justify-content: space-between;
+    padding-left:40px;
+    padding-right: 40px;
+    align-items: center;
+    
+}
+.landing_navbar_button{
+    border:0.5px solid white;
+    color:white;
+    font-size: 13px;
+    background-color: black;
+    border-radius:5px;
+    /* margin:7px; */
+    margin-left: 10px;
+  
+  
+    
+}
+.landing_navbar_logo{
+    width:4%;
+    height:90%;
+    /* border:3px solid green; */
+    /* margin:5px; */
+}
+.icon_size_user{
+    color:white;
+}
+.landing_navbar_logo img{
+    width:80px;
+    height:100%;
+}
+.Ted_Lasso{
+    
+    background-image: url("https://is5-ssl.mzstatic.com/image/thumb/Features114/v4/1c/30/cc/1c30cc8f-0ead-1bdf-e01d-c6d0de6f892a/Q1NILVRWQS1XVy1BVFZfUGx1cy1UZWRfTGFzc28ucG5n.png/1679x945sr.jpg");
+    width:100%;
+  height:900px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Readex Pro', sans-serif;
+  z-index: -1;
+  position: absolute;
+ 
+ 
+}
+.Ted_Lasso_text{
+    margin-top: 37%;
+    color:white;
+}
+.Ted_Lasso_heading{
+    font-size: 100px;
+}
+.Ted_Lasso_button{
+    width:200px;
+    height:45px;
+    border-radius:10px;
+    margin-top: 20px;
+    color:rgb(22, 22, 22);
+    background-color: whitesmoke;
+   font-weight: 300;
+   cursor:pointer ;
+   
+}
+.margin_top{
+    margin-top: -15px;
+ 
+}
+.grey_text{
+    color:grey;
+    font-size: 12px;
+}
+.terms_cond{
+    text-decoration: none;
+}
+.terms_cond:hover{
+    text-decoration: underline;
+}
+.Ted_Lasso_text_Exclusively{
+    margin-top: -15px;
+}
+/* //signin page hidden */
+.icon_size_cross{
+    font-size: 30px;
+    color:rgba(219, 212, 212, 0.986);
+    margin:20px;
+   
+   
+}
+.signin_box_hidden{
+    /* background-color: yellow; */
+    width:50%;
+    height:70vh;
+    /* border:3px solid red; */
+    background-color: white;
+    margin:auto;
+    margin-top:5%;
+    border-radius: 10px;
+    z-index: +1;
+    position: absolute;
+    margin-left: 25%;
+    border-top: 10px;
+    
+}
+/* //signin page container */
+.signin_container{
+    /* border:1px solid black;
+    display:flex; */
+    text-align: center;
+  
+
+    
+    
+}
+.text-size{
+    font-size: 23px;
+    color:rgb(68, 66, 66);
+}
+.icon_size_apple{
+    font-size: 65px;
+    color:rgb(139, 134, 134);
+    margin-bottom:30px;
+}
+.appleID_input{
+    width:400px;
+    background-color: white;
+  border-radius: 10px;
+  border:none;
+  margin:auto;
+  height: 50px;
+  margin-top: 40px;
+}
+.icon_size_arrow{
+    font-size: 30px;
+    color:rgb(139, 134, 134);
+}
+.appleID_input_arrow{
+    border:none;
+    height: 50px;
+}
+.margin_signin_container_links_1{
+margin-top: 100px;
+/* margin-bottom:10px; */
+
+}
+.margin_signin_container_links_2{
+margin-top: -10px;
+}
+.margin_signin_container_links_1 a ,.margin_signin_container_links_2 a{
+    text-decoration: none;
+}
+.margin_signin_container_links_1 a:hover, .margin_signin_container_links_2 a:hover{
+text-decoration: underline;
+}
+.hidden{
+    display: none;
+}
+.cross_button_1{
+    border:none;
+    background-color: white;
+}
+.cross_button_2{
+    border:none;
+    background-color: white;
+}
+.cross_button_3{
+    border:none;
+    background-color: white;
+}
+.cross_button_4{
+    border:none;
+    background-color: white;
+}
+/* //div having terms and condition */
+.image_apple img{
+    width:50px;
+height:50px;
+}
+.person_agreement{
+font-size: 30px;
+color:rgb(18, 112, 189);
+margin-top:30px;
+}
+.signin_termscondition{
+ 
+  width:50%;
+  height:70vh;
+ 
+  background-color: white;
+  margin:auto;
+  margin-top:5%;
+  border-radius: 10px;
+  border-top: 10px;
+  z-index: +1;
+  position: absolute;
+  margin-left: 25%;
+  border-top: 10px;
+}
+.sigin_terms_container{
+    text-align: center;
+    /* border:2px solid black; */
+  
+}
+.Continue_btn{
+width:400px;
+height:50px;
+border-radius: 10px;
+margin-top: 20px;
+font-size: 20px;
+}
+/* //input form */
+
+.sigin_form{
+  width:50%;
+  overflow-y:scroll;
+  height:70vh;
+ background-color: white;
+  margin:auto;
+  margin-top:5%;
+  border-radius: 10px;
+  z-index: +1;
+  position: absolute;
+  margin-left: 25%; 
+  padding-bottom:30px;
+}
+.sigin_form_container{
+    /* text-align: center; */
+    margin-left: 20%;
+  
+}
+.input_width{
+    width:500px;
+    height:50px;
+    border-radius:10px;
+    border:0.5px solid rgb(184, 176, 176);
+    padding-left:10px;
+}
+#create_AppleId{
+   margin-left: 20%;
+}
+/* //verification of email address */
+.email_verification{
+    width:50%;
+    height:70vh;
+    background-color: white;
+    margin:auto;
+    margin-top:5%;
+    border-radius: 10px;
+    border-top: 10px;
+    z-index: +1;
+    position: absolute;
+    margin-left: 25%;
+    border-top: 10px;
+}
+.email_verification_container{
+    text-align: center;
+    line-height: 70px;
+}
+.email_verification_container a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.verification_button{
+    margin-top: 20%;
+    margin-left: 76%;
+}
+#logged_user{
+    padding:2px;
+}
+
+
+/* ramesh---morningShow_css */
+/* ---------------------------------------------------------------
+--------------------------------------------------------------- */
+*{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .morning_show_video_background{
+            position: relative;
+            border: 1px solid black;
+            background-color: black;
+            width: 100%;
+            height: 90vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            color: white;
+            padding: 20px;
+            /* padding-top: 450px; */
+        }
+      
+        .morning_show_video_div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+        }
+        /* .morning_show_video {
+            width: 50%;
+        } */
+
+
+
+        .morning_show_video_background_dummy1{
+            z-index: 1;
+            flex: 2;
+        }
+        .morning_show_video_background_dummy1 img{
+            width: 24%;
+        }
+        .morning_show_video_background_dummy2{
+            flex: 2;
+        }
+
+.main_free_Trial_button_click{
+    z-index: 1;
+    flex: 1;
+    width:271px;
+    height:56px;
+    margin:6px;
+    font-size: 19px;
+    font-weight: 500;
+    
+   
+
+}
+.main_free_Trial{
+    /* border:2px solid yellow; */
+    display:flex;
+    z-index: 1;
+}
+.main_free_Trial_button_click_1{
+    z-index: 1;
+    background-color: rgb(0,64,221);
+}
+.main_free_Trial_button_click_2{
+    z-index: 1;
+    background-color: rgb(42,43,43);
+}
+.main_free_Trial_button{
+    /* border:2px solid red; */
+    width:400px;
+    text-align: center;
+    z-index: 1;
+}
+.main_free_Trial_textContent{
+    /* border:2px solid green; */
+    z-index: 1;
+}
+.main_free_Trial_textContent_text{
+    padding:30px;
+    z-index: 1;
+}
+.main_free_Trial_italic{
+padding:30px;
+font-style: italic;
+z-index: 1;
+
+}
+.dolby_image{
+    width: 70%;
+    padding-left: 30px;
+  
+}
+
+
+
+
+/* <----------------------------------> */
+/* CAST AND CREW */
+#mainCastAndCrew{
+    /* border:1px solid black; */
+    background-color: whitesmoke;
+    padding:24px;
+    }
+    /* //dimentions for the name written below the image */ */
+    /* } */
+    .main_CandC_images_box_name{
+        font-size:10px;
+    }
+    /* //dimentions for images; */
+    .main_CandC_images_box_image{
+        border-radius: 50%;
+        width:126px;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    }
+    /* //css for the text written below the name */
+    .main_CandC_images_box_text{
+    font-size: 13px;
+    color:grey;
+    }
+    .main_CandC_images{
+        /* border:2px solid red; */
+      
+        display:flex;
+    }
+    .main_CandC_images_box{
+        /* border:1px solid green; */
+        /* margin:0.7%; */
+        text-align: center;
+        align-items: center;
+        padding:10px;
+      
+    }
+    
+    
+    .main_howToWatch{
+        width:425px;
+        /* border:2px solid yellow; */
+        margin-left: 30px;
+        margin-top: 30px;
+        }
+    
+    .main_howToWatch_div{
+        width:280px;
+       height:225px;
+       margin-top: 20px;
+      /* border:3px solid orange; */
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+      
+    }
+    .main_howToWatch_box img{
+     width:100%;
+     height:160px;
+    
+    }
+    .main_howToWatch_freeTrial{
+        height:70px;
+        /* text-align: center; */
+       padding-left:15px;
+       padding-top: 17px;
+       background-color: rgb(240,240,243);
+    }
+    /* ===========================morning show related part======================================================================== */
+    .The_Morning_Show{
+        width: 250px;
+        border-radius:10px;
+      
+
+    }
+    .The_Morning_Show_slider{
+      /* padding: 10px; */
+       width: 95%;
+       margin-left: 35px;
+       
+    }
+    /* *{
+     background-color: #2D2D2D;
+    } */
+    .The_Morning_Show_heading{
+      color: #2D2D2D;
+      margin-left: 35px;
+      padding-top: 10px;
+      font-family:apple-system, BlinkMacSystemFont, -webkit-system-font, "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 20.91px;
+    }
+    .The_Morning_Show_main{
+      width: 100%;
+      height: 203px;
+      background-color:whitesmoke;
+    }
+    /* =============================bonus nad trailer part============================================ */
+    .Coda_Movie_bonusandTrailer{
+        margin-top: 1px;
+        padding-top:20px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        background-color:whitesmoke;
+        color: #2D2D2D;
+        width:100%;
+    
+    }
+    /* =============================coda movie related part============================================================================== */
+    .Coda_Movie_Related{
+        width: 250px;
+        border-radius:10px;
+      
+    
+    }
+    /* ===========================cast andf crew css========================================================================== */
+    #mainCastAndCrew{
+        /* border:1px solid black; */
+        background-color: whitesmoke;
+        padding:24px;
+        }
+        /* //dimentions for the name written below the image */ */
+        }
+        .main_CandC_images_box_name{
+            font-size:10px;
+        }
+        /* //dimentions for images; */
+        .main_CandC_images_box_image{
+            border-radius: 50%;
+            width:126px;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        }
+        /* //css for the text written below the name */
+        .main_CandC_images_box_text{
+        font-size: 13px;
+        color:grey;
+        }
+        .main_CandC_images{
+            /* border:2px solid red; */
+          
+            display:flex;
+        }
+        .main_CandC_images_box{
+            /* border:1px solid green; */
+            /* margin:0.7%; */
+            text-align: center;
+            align-items: center;
+            padding:10px;
+          
+        }
+        .main_howToWatch{
+            width:425px;
+            /* border:2px solid yellow; */
+            margin-left: 30px;
+            margin-top: 30px;
+            }
+        
+        .main_howToWatch_div{
+            width:280px;
+           height:225px;
+           margin-top: 20px;
+          /* border:3px solid orange; */
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+          
+        }
+        .main_howToWatch_box img{
+         width:100%;
+         height:160px;
+        
+        }
+        .main_howToWatch_freeTrial{
+            height:70px;
+            /* text-align: center; */
+           padding-left:15px;
+           padding-top: 17px;
+           background-color: rgb(240,240,243);
+        }
+    
