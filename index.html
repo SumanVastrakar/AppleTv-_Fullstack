@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <!-- //bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- //css link for linking page -->
+    <link rel="stylesheet" href="./index.css">
+
+
+    <!-- //fontawesome link -->
+    <script src="https://kit.fontawesome.com/d34e6aef84.js" crossorigin="anonymous"></script>
+
+    <!-- //browsing font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mochiy+Pop+P+One&family=PT+Serif&family=Pacifico&family=Permanent+Marker&family=Readex+Pro:wght@600&family=Rubik+Beastly&family=Syne+Tactile&display=swap"
+        rel="stylesheet">
+    <!-- //slick slider..... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title> Apple Tv+</title>
+    <link rel="icon" type="image/x-icon" href="https://tv.apple.com/assets/favicon/favicon-180-dcb7e297396806943a930ba83f20ea56.png
+    ">
+</head>
+
+<body>
+
+    <div id="navbar_landing" class="d-flex">
+        <div class="landing_navbar_logo">
+            <a href="#"> <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6qwhKQ2GhFut6cOduKQTRhngw0G6zVhJLg&usqp=CAU"
+                    alt="AppleLogo"></a>
+
+        </div>
+        <div class="landing_navbar_signin ml-5">
+            <button class="landing_navbar_button d-flex ">
+                <div class="logo_sigin m-1">
+                    <i class="fa-solid fa-user icon_size_user"></i>
+                </div>
+                <div class="logo_text m-1">Sign In</div>
+            </button>
+        </div>
+        <div class="landing_navbar_loggedIn dropdown hidden ml-5">
+            <button class="landing_navbar_button dropdown-toggle  d-flex landing_navbar_logout " type="button"
+                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="logo_sigin m-1">
+                    <i class="fa-solid fa-user icon_size_user"></i>
+                </div>
+                <div id="logged_user" class="logo_text m-1 pt-1" style="height:10px"></div>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item active" id="dropdown_logout_navbar" href="#">LogOut</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+            </ul>
+        </div>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle landing_navbar_button dropdown-toggle  d-flex landing_navbar_logout" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="logo_sigin m-1">
+                    <i class="fa-solid fa-user icon_size_user"></i>
+                </div>
+                <div id="logged_user" class="logo_text m-1" style="height:10px"></div>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div> -->
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    </div>
+    <!-- //SIGNIN part -->
+    <!-- //============================================================================================================================== -->
+    <div class="signin_box_hidden hidden">
+        <button class="cross_button_1"> <i class="fa-duotone fa-x icon_size_cross"></i></button>
+
+        <div class="signin_container">
+            <i class="fa-brands fa-apple icon_size_apple"></i>
+            <h2>Sign in with your Apple ID</h2>
+            <p class="text-size">You will be signed in to Apple TV and Apple Music</p>
+            <div class="input-group mb-3 appleID_input">
+                <input type="text" class="form-control appleID_input_box" placeholder="Apple ID"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary appleID_input_arrow" type="button" id="button-addon2"><i
+                        class="fa-regular fa-circle-right icon_size_arrow"></i></button>
+            </div>
+            <div class="signin_container_links">
+                <div class="margin_signin_container_links_1">
+                    <a class="Create_new_Apple_Id" href="#">Create New Apple ID ></a>
+                </div>
+
+                <br>
+                <div class="margin_signin_container_links_2">
+                    <a href="#"> Forget Apple ID or Password?</a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!-- //Apple Tv and Privacy -->
+    <!-- ================================================================================================================ -->
+    <div class="signin_termscondition hidden">
+        <button class="cross_button_2"> <i class="fa-duotone fa-x icon_size_cross"></i></button>
+        <div class="sigin_terms_container">
+            <div class="image_apple">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/AppleTVLogo.svg/1200px-AppleTVLogo.svg.png"
+                    alt="Apple image">
+            </div>
+            <h1>Apple TV & Privacy</h1>
+            <i class="fa-solid fa-people-arrows-left-right person_agreement "></i>
+            <p>Your playback, searches, purchases, and device trust score are used to personalize <br> your experience,
+                improve that of others, and prevent fraud.<br> <span style="color:blue">See how your data is
+                    managed...</span></p>
+            <p>With your new Apple ID, you will be able to sign in to available services. Apple records <br>certain
+                usage data for security, support, and reporting purposes.<br><span style="color:blue">See how your data
+                    is managed...</span> </p>
+            <button type="button" class="btn btn-primary Continue_btn">Continue</button>
+        </div>
+
+    </div>
+    <!-- //signin form... -->
+    <div class="sigin_form hidden">
+        <button class="cross_button_3"> <i class="fa-duotone fa-x icon_size_cross"></i></button>
+        <form>
+            <div class="sigin_form_container">
+                <h1 id="create_AppleId">Create Apple ID</h1>
+                <div class="mb-3 ">
+                    <input class="input_width" id="First_Name_input" type="text" placeholder="First Name">
+                </div>
+                <div class="mb-3">
+                    <input class="input_width" id="Last_Name_input" type="text" placeholder="Last Name">
+                </div>
+                <div class="mb-3">
+                    <input class="input_width" id="Birthday_input" type="text" placeholder="Birthday">
+                </div>
+                <div class="mb-3">
+                    <input class="input_width" id="email_input" type="text" placeholder="name@example.com">
+                    <div id="emailHelp" class="form-text">Your email will be your Apple ID.</div>
+                </div>
+                <div class="mb-3">
+                    <input class="input_width" id="password_input" type="password" placeholder="Password">
+
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Agree to Terms & Conditions
+
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary siginButton">Continue</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- //verification of email address -->
+    <div class="email_verification hidden">
+        <button class="cross_button_4"> <i class="fa-duotone fa-x icon_size_cross"></i></button>
+        <div class="email_verification_container">
+            <h1>Verify Email Address</h1>
+            <div class="email_verification_text"></div>
+            <input type="text" id="Email_verification_code" class="input_width" placeholder="Enter Code">
+            <br>
+            <a href="">Request a new code</a>
+            <br>
+            <button type="button" class="btn btn-primary verification_button">Submit</button>
+        </div>
+    </div>
+
+    <!-- //TED LASSO part -->
+    <!-- //========================================================================================================================= -->
+
+    <div class="Ted_Lasso d-flex" style="text-align:center;justify-content: center;">
+        <div class="Ted_Lasso_text" >
+            <p class="Ted_Lasso_heading" style="color:white">All Apple Originals.</p>
+            <h4 class="Ted_Lasso_text_Exclusively">Exclusively on Apple TV+. Watch here and on the Apple TV app across
+                your devices.</h4>
+            <button class="Ted_Lasso_button" style="color:black;font-weight:600;">Start Free Trial</button>
+
+
+
+
+            <p class="grey_text">7 days free,then $4.99/month.</p>
+            <p class="grey_text margin_top ">Or 3 months free when you buy an eligible Apple device.<a
+                    class="terms_cond" href="#"><span style="color:rgb(14, 109, 163)">Terms apply.</span></a> Some
+                titles coming later to Apple TV+.</p>
+            <a href=""
+                style="font-weight: 900; text-decoration: none; font-size: 20px;color:white;margin-top: -30px;">⮟</a>
+           
+
+        </div>
+
+    </div>
+
+    <!-- ===================================================================================================================================================================================================================================others landing page====================================== -->
+    <div class="other_part_of_landingPage">
+
+        <!-- =================================================================================================================================Ravi landing page of latest originals======================================================================== -->
+
+        <div class="Latest_originals_main ">
+            <h2 class="Latest_originals_heading">Latest Originals</h2>
+            <div class="Latest_originals_slider Latest_originals_slider_style ">
+                <div class="Latest_originals_images d-flex ">
+                    <img class="Latest_originals "
+                        alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+                        <div></div>
+                        <p>
+                           
+                        </p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images  d-flex ">
+                    <img class="Latest_originals"
+                         alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+                        <div></div>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images  d-flex ">
+                    <img class="Latest_originals"
+                         alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+
+                        <div></div>
+                        <p>
+                           
+                        </p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images  d-flex ">
+                    <img class="Latest_originals"
+                         alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+
+                        <div></div>
+                        <p>
+                           
+                        </p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images   d-flex ">
+                    <img class="Latest_originals"
+                         alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+
+                        <div></div>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images  d-flex ">
+                    <img class="Latest_originals"
+                         alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+
+                        <div></div>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images  d-flex ">
+                    <img class="Latest_originals"
+                         alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+
+                        <div></div>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images  d-flex ">
+                    <img class="Latest_originals"
+                         alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+
+                        <div></div>
+                        <p>
+                           
+                        </p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images  d-flex ">
+                    <img class="Latest_originals"
+                         alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+
+                        <div></div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images  d-flex ">
+                    <img class="Latest_originals"
+                         alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+
+                        <div></div>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="Latest_originals_images d-flex">
+                    <img class="Latest_originals"
+                        alt="" />
+
+                    <div class="latest_originals_slider_content_details">
+                        <div></div>
+
+                        <div></div>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <!-- 
+=======================================================================================================================================================watch entire season==================== -->
+
+        <div class="Watch_Enitre_Seasons_main">
+            <h2 class="Watch_Enitre_Seasons_heading">Watch Enitre Seasons</h2>
+            <div class="Watch_Enitre_Seasons_slider">
+                <div class="Watch_Enitre_Seasons_images">
+                    <a href="./morningShowMain.html">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" /></a>
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                       alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                         alt="" />
+                </div>
+                <div class="Watch_Enitre_Seasons_images">
+                    <img class="Watch_Enitre_Seasons"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================ramesh part immerse====================================================================================================================================================== -->
+
+        <div class="apple_exordinary_background_video_div">
+            <div class="apple_exordinary_background_video_sub"></div>
+            <div class="apple_exordinary_background_subhead">
+                <h5>SCI-FI</h5>
+                <h3>Immerse Yourself in the<br />Exordinary</h3>
+                <h5>Discover series and films that will take you places<br />you never imagined.</h5>
+            </div>
+            <div class="apple_exordinary_background_subadd">
+                <!-- <div>
+             <img src="https://is3-ssl.mzstatic.com/image/thumb/Features116/v4/e6/b0/50/e6b05061-aa13-0a76-1066-51f970093756/RUJSLVRWQS1XVy1TY2lGaV9JbmxpbmUtU2V2ZXJlbmNlLWxhbmc9ZW5fQVUrZW5fR0IrZW5fQ0ErZW5fVVMubHNy.lsr/738x416sr.webp" alt="image"/>
+         </div>
+         <div>
+             <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/dc/5d/e3/dc5de388-3b75-2bea-0438-3e91d10772b1/RUJSLVRWQS1XVy1TY2lGaV9JbmxpbmVfU2VlLWxhbmc9ZW5fQVUrZW5fR0IrZW5fQ0ErZW5fVVMubHNy.lsr/738x416sr.webp" alt="image">
+         </div>
+         <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/23/3f/15/233f15de-5bd5-b3a0-c15c-b040273c7b04/RUJSLVRWQS1XVy1TY2lGaV9JbmxpbmUtRmluY2gtbGFuZz1lbl9BVStlbl9HQitlbl9DQStlbl9VUy5sc3I.lsr/738x416sr.webp" alt="">
+
+         </div>
+         <div>
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/e3/64/23/e3642370-4b8a-adae-8f39-b4bd563878cf/RUJSLVRWQS1XVy1TY2lGaV9JbmxpbmUtSW52YXNpb24tbGFuZz1kZV9DSCtoZV9JTCtkYV9ESytlbl9BVStmcl9GUitmcl9DQStlbl9HQitub19OTytlbl9DQStmaV9GSStzdl9TRStpdF9JVCtubF9OTCthcl9TQStlbl9VUy5sc3I.lsr/738x416sr.webp" alt="">
+
+         </div>
+         <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/64/bf/a7/64bfa77a-3d22-5927-d459-075c06baab19/RUJSLVRWQS1XVy1TY2lGaV9JbmxpbmUtRm91bmRhdGlvbi5sc3I.lsr/738x416sr.webp" alt="">
+
+         </div>
+    <div>
+        <img src="https://is5-ssl.mzstatic.com/image/thumb/Features116/v4/02/45/c8/0245c8b7-1577-ce11-b941-bcd6231f287a/RUJSLVRWQS1XVy1TY2lGaV9JbmxpbmUtRm9yX0FsbF9NYW5raW5kLmxzcg.lsr/738x416sr.webp" alt="">
+    </div>
+    <div>
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/ed/17/1d/ed171d27-6511-516b-7914-4a272017e8ec/RUJSLVRWQS1XVy1TY2lGaV9JbmxpbmUtU3dhbl9Tb25nLWxhbmc9ZW5fQVUrZW5fR0IrZW5fQ0ErZW5fVVMubHNy.lsr/738x416sr.webp" alt="">
+    </div>
+    <div>
+        <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/ba/c6/83/bac6838e-a97f-e0cf-a173-c062a750fa00/RUJSLVRWQS1XVy1TY2lGaV9JbmxpbmUtRHJfQnJhaW4tbGFuZz1lbl9BVStlbl9HQitlbl9DQStlbl9VUy5sc3I.lsr/738x416sr.webp" alt="">
+    </div> -->
+            </div>
+
+
+            <div class="apple_exordinary_background_video">
+                <video width="100%" poster="" src="" autoplay loop muted class="post"></video>
+
+            </div>
+        </div>
+
+  
+        <!-- ============================================coming soon=========================================================================================================================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="Coming_Soon_main">
+            <h2 class="Coming_Soon_heading">Coming Soons</h2>
+            <p class="Coming_Soon_para">Add to your Up Next watchlist today.</p>
+            <div class="Coming_Soon_slider">
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                        
+                        alt="" />
+                </div>
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                        
+                        alt="" />
+                </div>
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                        
+                        alt="" />
+                </div>
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                        
+                        alt="" />
+                </div>
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                        
+                        alt="" />
+                </div>
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                        
+                        alt="" />
+                </div>
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                    
+                        alt="" />
+                </div>
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                        
+                        alt="" />
+                </div>
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                       
+                        alt="" />
+                </div>
+                <div class="Coming_Soon_images">
+                    <img class="Coming_Soon"
+                        
+                        alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ===============================Eerie tales=========================================================================================         -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="Erie_Tales_main">
+            <h2 class="Erie_Tales_heading"> Erie Tales</h2>
+            <div class="Erie_Tales_slider">
+                <div class="Erie_Tales_images">
+                    <img class="Erie_Tales"
+                       alt="" />
+                </div>
+                <div class="Erie_Tales_images">
+                    <img class="Erie_Tales"
+                      alt="" />
+                </div>
+                <div class="Erie_Tales_images">
+                    <img class="Erie_Tales"
+                        alt="" />
+                </div>
+                <div class="Erie_Tales_images">
+                    <img class="Erie_Tales"
+                        alt="" />
+                </div>
+                <div class="Erie_Tales_images">
+                    <img class="Erie_Tales"
+                      alt="" />
+                </div>
+                <div class="Erie_Tales_images">
+                    <img class="Erie_Tales"
+                        alt="" />
+                </div>
+                <div class="Erie_Tales_images">
+                    <img class="Erie_Tales"
+                        alt="" />
+                </div>
+            </div>
+
+        </div>
+        <!-- =============================================stories around the glovbe======================================================================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="Stories_From_Around_The_Globe_main">
+            <h2 class="Stories_From_Around_The_Globe_heading">Stories From Around The Globe</h2>
+            <div class="Stories_From_Around_The_Globe_slider">
+                <div class="Stories_From_Around_The_Globe_images">
+                    <img class="Stories_From_Around_The_Globe"
+                        alt="" />
+                </div>
+                <div class="Stories_From_Around_The_Globe_images">
+                    <img class="Stories_From_Around_The_Globe"
+                         alt="" />
+                </div>
+                <div class="Stories_From_Around_The_Globe_images">
+                    <img class="Stories_From_Around_The_Globe"
+                         alt="" />
+                </div>
+                <div class="Stories_From_Around_The_Globe_images">
+                    <img class="Stories_From_Around_The_Globe"
+                         alt="" />
+                </div>
+                <div class="Stories_From_Around_The_Globe_images">
+                    <img class="Stories_From_Around_The_Globe"
+                        alt="" />
+                </div>
+                <div class="Stories_From_Around_The_Globe_images">
+                    <img class="Stories_From_Around_The_Globe"
+                         alt="" />
+                </div>
+                <div class="Stories_From_Around_The_Globe_images">
+                    <img class="Stories_From_Around_The_Globe"
+                        alt="" />
+                </div>
+                <div class="Stories_From_Around_The_Globe_images">
+                    <img class="Stories_From_Around_The_Globe"
+                         alt="" />
+                </div>
+            </div>
+
+        </div>
+        <!-- ====================================finding their voices======================================================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="Finding_Their_Voice_main">
+            <h2 class="Finding_Their_Voice_heading">Finding Their Voice</h2>
+            <div class="Finding_Their_Voice_slider">
+                <div class="Finding_Their_Voice_images">
+                    <a href="./codaMain.html">
+                    <img class="Finding_Their_Voice"
+                       alt="" /></a>
+                </div>
+                <div class="Finding_Their_Voice_images">
+                    <img class="Finding_Their_Voice"
+                       alt="" />
+                </div>
+                <div class="Finding_Their_Voice_images">
+                    <img class="Finding_Their_Voice"
+                       alt="" />
+                </div>
+                <div class="Finding_Their_Voice_images">
+                    <img class="Finding_Their_Voice"
+                         alt="" />
+                </div>
+                <div class="Finding_Their_Voice_images">
+                    <img class="Finding_Their_Voice"
+                      alt="" />
+                </div>
+                <div class="Finding_Their_Voice_images">
+                    <img class="Finding_Their_Voice"
+                       alt="" />
+                </div>
+                <div class="Finding_Their_Voice_images">
+                    <img class="Finding_Their_Voice"
+                       alt="" />
+                </div>
+                <div class="Finding_Their_Voice_images">
+                    <img class="Finding_Their_Voice"
+                         alt="" />
+                </div>
+            </div>
+        </div>
+        <!--        
+      =================================================================================================================================================================Extraordinary_People============================================ -->
+      <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+      <div class="Extraordinary_People_main">
+            <h2 class="Extraordinary_People_heading">Extraordinary People</h2>
+            <div class="Extraordinary_People_slider">
+                <div class="Extraordinary_People_images d-flex">
+                    <img class="Extraordinary_People"
+                       alt="" />
+
+                    <div class="Extraordinary_People_slider_content_details">
+                        <div> </div>
+                        <div> You</div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="Extraordinary_People_images d-flex">
+                    <img class="Extraordinary_People"
+                       alt="" />
+
+                    <div class="Extraordinary_People_slider_content_details">
+                        <div> </div>
+                        <div></div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="Extraordinary_People_images d-flex">
+                    <img class="Extraordinary_People"
+                        alt="" />
+
+                    <div class="Extraordinary_People_slider_content_details">
+                        <div>  </div>
+                        <div></div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="Extraordinary_People_images d-flex">
+                    <img class="Extraordinary_People"
+                         alt="" />
+
+                    <div class="Extraordinary_People_slider_content_details">
+                        <div> </div>
+                        <div></div>
+                        <p></p>
+
+                    </div>
+                </div>
+                <div class="Extraordinary_People_images d-flex">
+                    <img class="Extraordinary_People"
+                        alt="" />
+
+                    <div class="Extraordinary_People_slider_content_details">
+                        <div></div>
+                        <div></div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="Extraordinary_People_images d-flex">
+                    <img class="Extraordinary_People"
+                      alt="" />
+
+                    <div class="Extraordinary_People_slider_content_details">
+                        <div></div>
+                        <div></div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="Extraordinary_People_images d-flex">
+                    <img class="Extraordinary_People"
+                        alt="" />
+
+                    <div class="Extraordinary_People_slider_content_details">
+                        <div> </div>
+                        <div></div>
+                        <p></p>
+
+                    </div>
+                </div>
+                <div class="Extraordinary_People_images d-flex">
+                    <img class="Extraordinary_People"
+                         alt="" />
+
+                    <div class="Extraordinary_People_slider_content_details">
+                        <div> </div>
+                        <div></div>
+                        <p></p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- ========================================================================================creatures and critters================================ -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="Creatures_critters_main">
+            <h2 class="Creatures_critters_heading">Creatures & Critters</h2>
+            <div class="Creatures_critters_slider">
+                <div class="Creatures_critters_images">
+                    <img class="Creatures_critters"
+                       alt="" />
+                </div>
+                <div class="Creatures_critters_images">
+                    <img class="Creatures_critters"
+                       alt="" />
+                </div>
+                <div class="Creatures_critters_images">
+                    <img class="Creatures_critters"
+                         alt="" />
+                </div>
+                <div class="Creatures_critters_images">
+                    <img class="Creatures_critters"
+                     alt="" />
+                </div>
+                <div class="Creatures_critters_images">
+                    <img class="Creatures_critters"
+                       alt="" />
+                </div>
+                <div class="Creatures_critters_images">
+                    <img class="Creatures_critters"
+                        alt="" />
+                </div>
+                <div class="Creatures_critters_images">
+                    <img class="Creatures_critters"
+                       alt="" />
+                </div>
+
+            </div>
+        </div>
+        <!-- =====================================ramesh big slide show========================================================================= -->
+        <div class="largest_slide_show megaSlide">
+        
+            <div>
+                <a href="./machbathMain.html">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/66/8a/8a/668a8a2d-c65d-7165-29e1-257115a37645/RVNXLVRWQS1XVy1Pc2NhcnMtVGhlX1RyYWdlZHlfb2ZfTWFjYmV0aC5wbmc.png/1320x495sr.webp"
+                    alt="image" /></a>
+            </div>
+            <div>
+                <a href="./codaMain.html">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/5c/69/1e/5c691e3d-f436-651c-27b1-80273cc31899/RVNXLVRWQS1XVy1Ucm9waHlfQ2FzZV9Pc2NhcnMtQ09EQS5wbmc.png/1320x495sr.webp"
+                    alt="image" /></a>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/Features126/v4/38/ea/d8/38ead8ac-0cb6-a41f-fcc4-25b0e3e92ff1/RVNXLVRWQS1XVy1Ucm9waHlfQ2FzZV9RdW90ZV9TZXZlcmFuY2UucG5n.png/1320x495sr.webp"
+                    alt="image" />
+            </div>
+            <div>
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/Features116/v4/9d/ba/f8/9dbaf8be-aa79-eece-b465-497c7d9fd1fa/RVNXLVRWQS1XVy1Ucm9waHlfQ2FzZV9RdW90ZS1UaGVfQWZ0ZXJwYXJ0eS5wbmc.png/1320x495sr.webp"
+                    alt="image" />
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/85/3c/c0/853cc067-fb76-5346-2411-705fcc8203de/RVNXLVRWQS1XVy1Td2FuX1NvbmctTkFBQ1BfQXdhcmQucG5n.png/1320x495sr.webp"
+                    alt="image" />
+            </div>
+            <div>
+                <a href="./morningShowMain.html">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/Features126/v4/fa/bf/a4/fabfa44e-2077-90ff-dfa2-23fc70e1bfa1/RVNXLVRWQS1XVy1UTVMtU0FHX0F3YXJkLnBuZw.png/1320x495sr.webp"
+                    alt="image" /></a>
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/9b/70/94/9b709448-8024-7e0b-57f8-d551cdbd9c01/RVNXLVRWQS1XVy1Ucm9waHlfQ2FzZS1UZWRfTGFzc29fUzItbGFuZz1lbl91cy5wbmc.png/1320x495sr.webp"
+                    alt="image" />
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/7f/50/36/7f5036da-fcf2-21b0-5c22-e1a137459a90/RVNXLVRWQS1XVy1Ucm9waHlfQ2FzZV9RdW90ZS1GaW5jaC1sYW5nPWVuX3VzLnBuZw.png/1320x495sr.webp"
+                    alt="image" />
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features115/v4/b0/e3/6e/b0e36ee0-6bd7-107d-a106-f06c28c5607e/RVNXLVRWQS1XVy1Ucm9waHlfQ2FzZV9RdW90ZS1Gb3JfQWxsX01hbmtpbmQtbGFuZz1lbl91cy5wbmc.png/1320x495sr.webp"
+                    alt="image" />
+            </div>
+        </div>
+        <!-- ===========================all drama series================================================================================================ -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="All_Drama_Serires_main">
+            <h2 class="All_Drama_Serires_heading">All Drama Series</h2>
+            <div class="All_Drama_Serires_slider">
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                        alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                        alt="" />
+                </div>
+                <a href="./morningShowMain.html">
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                       alt="" />
+                </div>
+            </a>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                       alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                         alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                        alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                       alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                        alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                        alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                        alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                         alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                        alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                        alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                      alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                       alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                         alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                       alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                         alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                       alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                         alt="" />
+                </div>
+                <div class="All_Drama_Serires_images">
+                    <img class="All_Drama_Serires"
+                        alt="" />
+                </div>
+
+            </div>
+        </div>
+        <!-- ==============================================features and film========================================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="All_Features_Flims_main">
+            <h2 class="All_Features_Flims_heading">All Feature Films</h2>
+            <div class="All_Features_Flims_slider">
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                       alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                        alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                     alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                      alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                        alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                        alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                       alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                      alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                         alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                        alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                       alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                         alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                         alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                       alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                   alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                        alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                       alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                       alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                       alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                       alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                        alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                        alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                       alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                        alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                         alt="" />
+                </div>
+                <div class="All_Features_Flims_images">
+                    <img class="All_Features_Flims"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+        <!-- ===============================================all comedy series=============================================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="All_Comdey_Series_main">
+            <h2 class="All_Comdey_Series__heading">All Comdey Series</h2>
+            <div class="All_Comdey_Series__slider">
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                       alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                         alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                       alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                      alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                         alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                        alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                        alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                         alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                       alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                         alt="" />
+                </div>
+                <div class="All_Comdey_Series__images">
+                    <img class="All_Comdey_Series_"
+                     alt="" />
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ========================================our amazing planet============================================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="Our_Amazing_Planet_main">
+            <h2 class="Our_Amazing_Planet_heading">Our Amazing Planet</h2>
+            <p class="Our_Amazing_Planet_para">Explore nature documentary films and series.</p>
+            <div class="Our_Amazing_Planet_slider">
+                <div class="Our_Amazing_Planet_images">
+                    <img class="Our_Amazing_Planet"
+                      
+                        alt="" />
+                </div>
+                <div class="Our_Amazing_Planet_images">
+                    <img class="Our_Amazing_Planet"
+                        
+                        alt="" />
+                </div>
+                <div class="Our_Amazing_Planet_images">
+                    <img class="Our_Amazing_Planet"
+                       
+                        alt="" />
+                </div>
+                <div class="Our_Amazing_Planet_images">
+                    <img class="Our_Amazing_Planet"
+                       
+                        alt="" />
+                </div>
+                <div class="Our_Amazing_Planet_images">
+                    <img class="Our_Amazing_Planet"
+                     
+                        alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================all nonfiction series==================================================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="All_Nonfiction_Series_main">
+            <h2 class="All_Nonfiction_Series_heading">All Nonfiction Series</h2>
+            <div class="All_Nonfiction_Series_slider">
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                       alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                        alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                        alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                      alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                       alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                        alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                      alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                       alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                       alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                       alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                       alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                        alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                         alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                        alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                        alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                         alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                        alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                       alt="" />
+                </div>
+                <div class="All_Nonfiction_Series_images">
+                    <img class="All_Nonfiction_Series"
+                     alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================================kids and family========================================================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="Kids_And_Family_main">
+            <h2 class="Kids_And_Family_heading">Kids and Family</h2>
+            <p class="Kids_And_Family_para">Discover shows and movies filled with wonder and imagination.</p>
+            <div class="Kids_And_Family_slider">
+                <div class="Kids_And_Family_images">
+                    <img class="Kids_And_Family"
+                      
+                        alt="" />
+                </div>
+                <div class="Kids_And_Family_images">
+                    <img class="Kids_And_Family"
+                       
+                        alt="" />
+                </div>
+                <div class="Kids_And_Family_images">
+                    <img class="Kids_And_Family"
+             
+                        alt="" />
+                </div>
+                <div class="Kids_And_Family_images">
+                    <img class="Kids_And_Family"
+                
+                        alt="" />
+                </div>
+                <div class="Kids_And_Family_images">
+                    <img class="Kids_And_Family"
+
+                        alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================fun for all============================================= -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="Fun_For_All_main">
+            <h2 class="Fun_For_All_heading">Fun for All</h2>
+            <div class="Fun_For_All_slider">
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                       alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                       alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                         alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                      alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                     alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                       alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                         alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                      alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                         alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                      alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                         alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                      alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                       alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                      alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                       alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                       alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                      alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                        alt="" />
+                </div>
+                <div class="Fun_For_All_images">
+                    <img class="Fun_For_All"
+                         alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================================inspiration for all================================================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="Inspiration_main">
+            <h2 class="Inspiration_heading">Inspirations</h2>
+            <p class="Inspiration_para">The stories behind the story.</p>
+            <div class="Inspiration_slider">
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                       
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                        
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                       
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                       
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                      
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                     
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                     
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                      
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                       
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                    
+                        alt="" />
+                </div>
+                <div class="Inspiration_images">
+                    <img class="Inspiration"
+                     
+                        alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- =================================================footer landing pafge part==================================================== -->
+        <hr style="height:1px;width:1450px;text-align: center;margin-left: 30px;margin-top: 0px;margin-bottom: 0px;">
+        <div class="footer_landingPage">
+            <a href="https://support.apple.com/en-in/guide/tvplus/apdec6a74b4c/1.0/web/1.0">
+                <img style="width:100%" src="https://i.ibb.co/4FwSkbh/Screenshot-55.png" alt="">
+            </a>
+            <a href="https://support.apple.com/en-in/guide/tvplus/apdec6a74b4c/1.0/web/1.0">
+                <img  style="width:100%" src="https://i.ibb.co/hcvfkfS/Screenshot-56.png" alt="">
+            </a>
+        </div>
+     
+    </div>
+
+
+
+    <!-- //Bootstrap link -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- 
+=====================================slick s classer javascript part of ravi================================================================================================================================== -->
+
+    <!-- slick java scrip part of ravi latest original -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- <script type="text/JavaScript">
+
+   $('.Latest_originals_slider').slick({
+    slidesToShow: 3,
+    slidesToScroll:3,
+    autoplay:false,
+    autoplaySpeed: 2000,
+  });
+  </script> -->
+
+    <!-- sliclk part of watch entire season -->
+    <!-- <script type="text/JavaScript">
+
+    $('.Watch_Enitre_Seasons_slider').slick({
+      slidesToShow: 5,
+      slidesToScroll:5,
+      autoplay:false,
+      autoplaySpeed: 2000,
+    });
+    </script> -->
+
+    <!-- =================comin soon===================== -->
+    <!-- <script type="text/JavaScript">
+
+        $('.Coming_Soon_slider').slick({
+          slidesToShow: 4,
+          slidesToScroll:4,
+          autoplay:false,
+          autoplaySpeed: 2000,
+        });
+        </script> -->
+
+    <!-- ==================================eerie tales=========================================================================================== -->
+    <!-- <script type="text/JavaScript">
+
+            $('.Erie_Tales_slider').slick({
+              slidesToShow: 5,
+              slidesToScroll:5,
+              autoplay:false,
+              autoplaySpeed: 2000,
+            });
+            </script> -->
+    <script src="./index.js"></script>
+    <!-- //adding the slider Part -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/JavaScript">
+
+$('.megaSlide').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay:true,
+autoplaySpeed: 2000,
+});
+
+
+
+</script>
+
+    <!-- ==================================================stories around the glovbe========================================================================= -->
+    <!-- <script type="text/JavaScript">
+
+    $('.Stories_From_Around_The_Globe_slider').slick({
+      slidesToShow: 5,
+      slidesToScroll:5,
+      autoplay:false,
+      autoplaySpeed: 2000,
+    });
+    </script> -->
+    <!-- ===================================================finding their voices======================================================================= -->
+    <!-- <script type="text/JavaScript">
+
+        $('.Finding_Their_Voice_slider').slick({
+          slidesToShow: 5,
+          slidesToScroll:5,
+          autoplay:false,
+          autoplaySpeed: 2000,
+        });
+        </script> -->
+    <!-- ==================================================extraordinary people============================================================================================================================= -->
+    <!-- <script type="text/JavaScript">
+
+            $('.Extraordinary_People_slider').slick({
+              slidesToShow: 3,
+              slidesToScroll:3,
+              autoplay:false,
+              autoplaySpeed: 2000,
+            });
+            </script> -->
+    <!-- ================================================creatures and critters========================================================== -->
+    <!-- <script type="text/JavaScript">
+
+                $('.Creatures_critters_slider').slick({
+                  slidesToShow: 5,
+                  slidesToScroll:5,
+                  autoplay:false,
+                  autoplaySpeed: 2000,
+                });
+                </script> -->
+    <!-- =====================================all drama=========================================================================== -->
+    <!-- <script type="text/JavaScript">
+
+                    $('.All_Drama_Serires_slider').slick({
+                      slidesToShow: 5,
+                      slidesToScroll:5,
+                      autoplay:false,
+                      autoplaySpeed: 2000,
+                    });
+                    </script> -->
+    <!-- =====================================alll features film===================================================================== -->
+    <!-- <script type="text/JavaScript">
+
+                        $('.All_Features_Flims_slider').slick({
+                          slidesToShow: 5,
+                          slidesToScroll:5,
+                          autoplay:false,
+                          autoplaySpeed: 2000,
+                        });
+                        </script> -->
+
+    <!-- =======================================all comedy series============================================================= -->
+    <!-- <script type="text/JavaScript">
+
+        $('.All_Comdey_Series__slider').slick({
+          slidesToShow: 5,
+          slidesToScroll:5,
+          autoplay:false,
+          autoplaySpeed: 2000,
+        });
+        </script> -->
+    <!-- ==========================our amazing planet===================================================================================== -->
+    <!-- <script type="text/JavaScript">
+
+            $('.Our_Amazing_Planet_slider').slick({
+              slidesToShow: 4,
+              slidesToScroll:4,
+              autoplay:false,
+              autoplaySpeed: 2000,
+            });
+            </script> -->
+    <!-- =====================================all nonfiction series============================================================================= -->
+    <!-- <script type="text/JavaScript">
+
+                $('.All_Nonfiction_Series_slider').slick({
+                  slidesToShow: 5,
+                  slidesToScroll:5,
+                  autoplay:false,
+                  autoplaySpeed: 2000,
+                });
+                </script> -->
+    <!-- =======================================kids and family=================================================================== -->
+    <!-- <script type="text/JavaScript">
+
+                    $('.Kids_And_Family_slider').slick({
+                      slidesToShow: 4,
+                      slidesToScroll:4,
+                      autoplay:false,
+                      autoplaySpeed: 2000,
+                    });
+                    </script> -->
+    <!-- ======================fun for alll=================================================================================== -->
+    <!-- <script type="text/JavaScript">
+
+                        $('.Fun_For_All_slider').slick({
+                          slidesToShow: 5,
+                          slidesToScroll:5,
+                          autoplay:false,
+                          autoplaySpeed: 2000,
+                        });
+                        </script> -->
+    <!-- =================================inspiration for all==================================================================== -->
+    <!-- <script type="text/JavaScript">
+
+        $('.Inspiration_slider').slick({
+          slidesToShow: 4,
+          slidesToScroll:4,
+          autoplay:false,
+          autoplaySpeed: 2000,
+        });
+        </script> -->
+</body>
+
+</html>
