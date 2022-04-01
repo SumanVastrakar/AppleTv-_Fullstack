@@ -600,7 +600,7 @@ function Inspirationall(data) {
 
 // ========================================================================API CREATION===================================================
 
-let url = "http://localhost:5000/users";
+let url = "https://appletv-api.herokuapp.com/users";
 async function getData() {
     try {
         let data = await fetch(url);
